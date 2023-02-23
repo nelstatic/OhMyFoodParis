@@ -5,10 +5,182 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    font-family: 'Shrikhand', cursive;
     --pistache: #99E2D0;
     --green-color: #008766;
     --cyan: #89C8FA;
     --navy-blue: #003A68;
-    --mauve: #9356DC;
+    --mauve : #9356DC;
+    --lavande: #F5EDFF;
+    --gris1 : #353535;
+    --gris2 : #EAEAEA;
+    --gris3 : #F6F6F6;
+    --gris4 : #7E7E7E;
+}
+
+body{
+    max-width: 430px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*************************************************************************/
+
+
+nav{
+    background: white;
+    padding: 3% 0 1.5% 0;
+    text-align: center;
+    
+}
+
+nav .logo{
+    width: 41%;
+    object-fit: cover;
+    padding: 2% 0%;
+}
+
+
+/*************************************************************************/
+
+
+
+.one{
+    width: 100%;
+    background: var(--gris3);
+}
+.one .location{
+    background: var(--gris2);
+    padding: 3% 0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15) inset;
+}
+.one .location p{
+    text-align: center;
+    color: var(--gris1);
+    font-size: 16PX;
+    font-weight: 600;
+}
+.one .location p span{
+    padding: 0 3%;
+}
+.fa-location-dot{
+    color: var(--gris1);
+}
+
+
+.one .hero{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10%;
+}
+.one .hero h1{
+    font-size: 24px;
+    max-width: 275px;
+    font-weight: 700;
+    margin: 0 auto;
+}
+.one .hero p{
+    font-size: 18px;
+    font-weight: 300;
+    padding: 4% 0;
+    margin-bottom: 15px;
+}
+.one .hero a{
+    font-size: 16px;
+    font-weight: 500;
+    background: linear-gradient(200.64deg, #FF79DA -5.2%, var(--mauve) 110.74%);
+    padding: 5%;
+    width: 60%;
+    margin: 0 auto;
+    color: white;
+    border-radius: 25px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    align-items: center;
+}
+
+
+/*************************************************************************/
+
+.two .fonctionnement{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10% 0;
+}
+.two .fonctionnement .etapes ul{
+    list-style: none;
+    padding: 2% 0%;
+}
+.two .fonctionnement .etapes ul li{
+    padding: 5%;
+    background: var(--gris3);
+    margin: 6% 3%;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    width: 90%;
+    position: relative;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+.two .fonctionnement .etapes ul li:hover{
+    background: var(--lavande);
+}
+.two .fonctionnement .etapes ul li:hover > .fa-solid{
+    color: var(--mauve);
+}
+
+
+.two .fonctionnement .etapes ul li i{
+    color: var(--gris4);
+    padding: 1% 4%;
+    font-size: 18px;
+}
+.two .fonctionnement .etapes ul li span{
+    padding: 1%;
+    font-size: 14px;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    color: white;
+    background: var(--mauve);
+    border-radius: 50%;
+    position: absolute;
+    left: -3%;
+}
+
+
+/*************************************************************************/
+
+.three{
+    background: var(--gris3);
+    width: 100%;
+}
+
+.three .restaurants{
+    width: 90%;
+    margin: 0 auto;
+    padding: 12% 0%;
+}
+.three .restaurants h2{
+    padding-bottom: 6%;
+    font-size: 24px;
+    font-weight: 700;
+}
+.three .restaurants .card{
+    width: 90%;
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+.three .restaurants .card img{
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+.three .restaurants .card .content{
+    display: flex;
+    
 }
