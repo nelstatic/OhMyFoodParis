@@ -175,6 +175,7 @@ nav .fa-arrow-left {
 .content {
 	padding: 10px;
 	transition: 600ms;
+	width:85%;
 }
 
 .content h4 {
@@ -208,10 +209,6 @@ nav .fa-arrow-left {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
-
-.content {
-	width: 100%;
 }
 
 .card:hover .content {
